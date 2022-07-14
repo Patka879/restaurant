@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Sofia-pro";
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 10px 140px 14px 140px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  width: 406px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  height: 48px;
+  width: 47px;
+  margin-right: 68px;
+}
+
+.black-highlight {
+  background-color: #000000;
+  color: white;
+}
+
+.red-highlight {
+  background-color: #920303;
+}
+
+.nav-bar--left, .nav-bar--right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 53px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  width: 97px;
+  padding: 7px 0;
+  cursor: pointer;
+}
+
+.nav-button--icon {
+  margin: 6px 0;
+}
+
+#nav-button-order {
+  background-color: #920303;
+  color: #FFFFFF;
+}
+
+.discount-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discount-section-info {
+  width: 568px;
+  margin: 102px 0px 0px 149px;
+}
+
+.order-online-btn {
+  background-color: #920303;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  width: 219px;
+  padding: 18px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ordering-apps-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+  padding: 0 368px;
+}
+
+.apps-logo {
+  height: auto;
+}
+
+.current-promo-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.current-promo-option {
+  margin: 0 8px;
+  position: relative;
+}
+
+.current-promo-image {
+  height: 415px;
+  width: 916px;
+}
+
+.current-promo-details {
+  position: absolute;
+  top: 60px;
+  left: 125px;
+  color: white;
+  width: 310px;
+  z-index: 10;
+}
+
+.ubereats-icon {
+  height: 25.97px;
+  margin: 0px 10px 15px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
