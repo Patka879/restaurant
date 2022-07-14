@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Restaurant</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <nav id="nav-bar">
-            <div class="nav-bar--left">
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Steak House</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-bar">
                 <img class="logo" src="src/logo.png" alt="restaurant-logo">
                 <a class="nav-link" href="#" target="_blank">Steaks</a>
                 <a class="nav-link" href="#" target="_blank">Burgers</a>
@@ -18,24 +18,24 @@
                 <a class="nav-link" href="#" target="_blank">Gdzie dowozimy?</a>
                 <a class="nav-link" href="#" target="_blank">Kontakt</a>
             </div>
-            <div class="nav-bar--right">
-                <a class="nav-link" href="#" target="_blank">
-                    <button class="nav-button">
-                        <img class="nav-button--icon" src="src/mojekonto-icon.svg" alt="personal-account">Moje konto
+            <div class="nav-bar">
+                <a href="#" target="_blank">
+                    <button class="btn-regular">
+                        <img src="src/mojekonto-icon.svg" alt="personal-account">Moje konto
                     </button>
                 </a>
-                <a class="nav-link" href="#" target="_blank">
-                    <button class="nav-button">
-                        <img class="nav-button--icon" src="src/koszyk-icon.svg" alt="shopping-basket">Koszyk
+                <a href="#" target="_blank">
+                    <button class="btn-regular">
+                        <img src="src/koszyk-icon.svg" alt="shopping-basket">Koszyk
                     </button>
                 </a>
-                <a class="nav-link" href="#" target="_blank">
-                    <button class="nav-button" id="nav-button-order">
-                        <img class="nav-button--icon" src="src/zamow-icon.svg" alt="plates">Zamów
+                <a href="#" target="_blank">
+                    <button class="btn-order">
+                        <img src="src/zamow-icon.svg" alt="plates">Zamów
                     </button>
                 </a>
             </div>
-    </nav>
+        </nav>
     <main>
         <section class="discount-section">
             <div class="discount-section-info">
@@ -43,7 +43,7 @@
                     <span class="black-highlight">Rabat 10% </span>
                     na <br> pierwsze zamówienie!
                 </h1>
-                <h4>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z <b>promocji -10%.</b> Spiesz się, czas trwania promocji do końca lutego.</h4>
+                <h2>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z <b>promocji -10%.</b> Spiesz się, czas trwania promocji do końca lutego.</h2>
                 <button class="order-online-btn">Zamów online</button>
             </div>
             <img class="discount-section-image" src="src/steak.png" alt="steak-picture">
@@ -55,28 +55,28 @@
             <a href="#" target="_blank"> <img class="apps-logo" src="src/ubereats.svg" alt="ubereats-logo"> </a>
             <a href="#" target="_blank"> <img class="apps-logo" src="src/boltfood.svg" alt="boltfood-logo"> </a>
         </section>
-        <section class="current-promo-section">
-            <div class="current-promo-option">
-                <img class="current-promo-image" src="src/promo1.png" alt="food-on-the-table">
-                <div class="current-promo-details">
-                    <h2>Zestaw dla 3 osób</h2>
-                    <h3>Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od
+        <section class="promo">
+            <div class="promo-option">
+                <img class="promo-img" src="src/promo1.png" alt="food-on-the-table">
+                <div class="promo-details">
+                    <h1>Zestaw dla 3 osób</h1>
+                    <h2>Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od
                         <span class="black-highlight">39zł </span>
-                    </h3>
+                    </h2>
                     <button class="order-online-btn">Zamów online</button>
                 </div>
             </div>
-            <div class="current-promo-option">
-                <img class="current-promo-image" src="src/promo2.png" alt="uber-eats-promo">
-                <div class="current-promo-details">
-                    <h2>UberEats</h2>
-                    <h3>Zamawiaj w aplikacji 
+            <div class="promo-option">
+                <img class="promo-img" src="src/promo2.png" alt="uber-eats-promo">
+                <div class="promo-details">
+                    <h1>UberEats</h1>
+                    <h2>Zamawiaj w aplikacji 
                         <span class="red-highlight">10% taniej.</span> 
                         Pobierz aplikację UberEats już dziś.
-                    </h3>
-                    <img class="ubereats-icon" src="src/appstore.svg" alt="appstore-icon">
-                    <img class="ubereats-icon" src="src/googleplay.svg" alt="googleplay-icon">
-                    <img class="ubereats-icon" src="src/huawei.svg" alt="huawei-icon">
+                    </h2>
+                    <img src="src/appstore.svg" alt="appstore-icon">
+                    <img src="src/googleplay.svg" alt="googleplay-icon">
+                    <img src="src/huawei.svg" alt="huawei-icon">
                     <button class="order-online-btn">Zamów online</button>
                 </div>
             </div>

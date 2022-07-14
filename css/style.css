@@ -1,6 +1,23 @@
+button:hover, a:hover {
+  transform: scale(1.1);
+  transition: all 100ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Sofia-pro";
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 nav {
@@ -14,32 +31,33 @@ nav {
   padding: 10px 140px 14px 140px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 65px;
+nav div {
+  display: flex;
+  align-items: center;
 }
-
-h2 {
-  font-size: 35px;
+nav a {
+  margin-right: 53px;
+  color: #000000;
 }
-
-h3 {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 400;
+nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  width: 97px;
+  padding: 7px 0;
 }
-
-h4 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 25px;
-  width: 406px;
+nav button img {
+  margin: 6px 0;
 }
-
-a {
-  text-decoration: none;
+nav .btn-regular {
+  background-color: transparent;
+}
+nav .btn-order {
+  background-color: #920303;
+  color: #FFFFFF;
 }
 
 .logo {
@@ -57,42 +75,20 @@ a {
   background-color: #920303;
 }
 
-.nav-bar--left, .nav-bar--right {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link {
-  margin-right: 53px;
-  cursor: pointer;
-  color: #000000;
-}
-
-.nav-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: transparent;
-  align-items: center;
-  border-radius: 10px;
-  border: none;
-  width: 97px;
-  padding: 7px 0;
-  cursor: pointer;
-}
-
-.nav-button--icon {
-  margin: 6px 0;
-}
-
-#nav-button-order {
-  background-color: #920303;
-  color: #FFFFFF;
-}
-
 .discount-section {
   display: flex;
   justify-content: space-between;
+}
+.discount-section h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 65px;
+}
+.discount-section h2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  width: 406px;
 }
 
 .discount-section-info {
@@ -118,28 +114,33 @@ a {
   margin: 24px 0;
   padding: 0 368px;
 }
-
-.apps-logo {
+.ordering-apps-section img {
   height: auto;
 }
 
-.current-promo-section {
+.promo {
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
 }
-
-.current-promo-option {
+.promo h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.promo h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.promo-option {
   margin: 0 8px;
   position: relative;
 }
-
-.current-promo-image {
+.promo-img {
   height: 415px;
   width: 916px;
 }
-
-.current-promo-details {
+.promo-details {
   position: absolute;
   top: 60px;
   left: 125px;
@@ -147,8 +148,7 @@ a {
   width: 310px;
   z-index: 10;
 }
-
-.ubereats-icon {
+.promo-details img {
   height: 25.97px;
   margin: 0px 10px 15px 0px;
 }
