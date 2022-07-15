@@ -1,5 +1,25 @@
 {
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
-    "swiper": "^8.3.1"
-  }
+    "dom7": "^4.0.4",
+    "swiper": "^8.3.1",
+    "ssr-window": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patka879/restaurant-.git"
+  },
+  "author": "Patrycja Mysiak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patka879/restaurant-/issues"
+  },
+  "homepage": "https://github.com/Patka879/restaurant-#readme"
 }
