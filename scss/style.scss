@@ -1,5 +1,5 @@
 @import 'config';
-@import 'mobile';
+@import 'breakpoints';
 
 * {
     box-sizing: border-box;
@@ -18,7 +18,7 @@ a, button{
         @extend %hover-style; 
    }
    &:active { 
-        @extend %active-style; 
+        @extend %active-style;
     }
 }
 
