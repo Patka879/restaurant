@@ -1,12 +1,21 @@
 "use strict"
 
-// import Swiper from "swiper"
-// import 'swiper/css'
+const swiper = new Swiper('.swiper', {
+  loop: true,
 
-// const swiper = new Swiper
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
+  pagination: {
+          el: ".swiper-pagination",
+  }
+})
+  
 
-document.querySelector(".dropdown-menu-btn").addEventListener("click", function() {
+document.querySelector(".dropdown-menu-btn").addEventListener("click", function(event) {
+  event.preventDefault()
     let nav = document.querySelector(".nav-top")
     if (nav.style.display === "flex") {
       nav.style.display = "none";
