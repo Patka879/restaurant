@@ -10,6 +10,52 @@ $red-color: #920303;
     transition: all 100ms;
 }
 
+@mixin nav-button {
+    @include flex-center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: none;
+    width: 63px;
+    padding: 7px 0;
+    font-size: 12px;
+    margin-right: 8px;
+
+    @include sm {
+        font-size: 14px;
+        width: 86px;
+        padding: 9px 7px;
+    }
+
+    @include md {
+        width: 97px;
+        padding: 7px 0;
+    }
+
+    @include xl {
+        margin-right: 30px;
+    }
+
+    img {
+        margin: 4px 0;
+        height: 12px;
+
+        @include sm {
+            margin: 6px 0;
+            height: 14px;
+        }
+
+        @include md {
+            margin: 6px 0;
+            width: 20px;
+            height: auto;
+        }
+
+        @include xl {
+            width: 14px;
+        }
+    }
+}
+
 @mixin flex-center {
     display: flex;
     align-items: center;

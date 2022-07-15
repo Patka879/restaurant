@@ -12,7 +12,7 @@
     </head>
     <body>
         <nav>
-            <div>
+            <div class="nav-top">
                 <img class="logo" src="src/logo.png" alt="restaurant-logo">
                 <a class="nav-link" href="#" target="_blank">Steaks</a>
                 <a class="nav-link" href="#" target="_blank">Burgers</a>
@@ -21,70 +21,73 @@
                 <a class="nav-link" href="#" target="_blank">Gdzie dowozimy?</a>
                 <a class="nav-link" href="#" target="_blank">Kontakt</a>
             </div>
-            <div>
+            <div class="nav-bottom">
+                <button class="dropdown-menu-btn">
+                    <img class="dropdown-menu-img" src="src/logo.png" alt="restaurant-logo"> Menu
+                </button>
                 <a href="#" target="_blank">
-                    <button class="btn-regular">
+                    <button class="nav-btn-regular">
                         <img src="src/mojekonto-icon.svg" alt="personal-account">Moje konto
                     </button>
                 </a>
                 <a href="#" target="_blank">
-                    <button class="btn-regular">
+                    <button class="nav-btn-regular">
                         <img src="src/koszyk-icon.svg" alt="shopping-basket">Koszyk
                     </button>
                 </a>
                 <a href="#" target="_blank">
-                    <button class="btn-order">
+                    <button class="nav-btn-order">
                         <img src="src/zamow-icon.svg" alt="plates">Zamów
                     </button>
                 </a>
             </div>
         </nav>
-    <main>
-        <section class="discount">
-            <div class="discount-info">
-                <h1>
-                    <span class="black-highlight">Rabat 10% </span>
-                    na <br>pierwsze zamówienie!
-                </h1>
-                <h2>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z <b>promocji -10%.</b> Spiesz się, czas trwania promocji do końca lutego.</h2>
-                <button class="order-online-btn">Zamów online</button>
-            </div>
-            <img class="discount-section-image" src="src/steak.png" alt="steak-picture">
-        </section>
-        <section class="delivery-apps">
-            <a href="#" target="_blank"> <img class="apps-logo" src="src/pysznepl.svg" alt="pysznepl-logo"> </a>
-            <a href="#" target="_blank"> <img class="apps-logo" src="src/deligoo.svg" alt="deligoo-logo"> </a>
-            <a href="#" target="_blank"> <img class="apps-logo" src="src/glovo.svg" alt="glovo-logo"> </a>
-            <a href="#" target="_blank"> <img class="apps-logo" src="src/ubereats.svg" alt="ubereats-logo"> </a>
-            <a href="#" target="_blank"> <img class="apps-logo" src="src/boltfood.svg" alt="boltfood-logo"> </a>
-        </section>
-        <section class="promo">
-            <div class="promo-option">
-                <img class="promo-img" src="src/promo1.png" alt="food-on-the-table">
-                <div class="promo-details">
-                    <h1>Zestaw dla 3 osób</h1>
-                    <h2>Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od
-                        <span class="black-highlight">39zł </span>
-                    </h2>
+        <main>
+            <section class="discount">
+                <div class="discount-info">
+                    <h1>
+                        <span class="black-highlight">Rabat 10% </span>
+                        na <br>pierwsze zamówienie!
+                    </h1>
+                    <h2>Do 20 stycznia złóż zamówienie na stronie i skorzystaj z <b>promocji -10%.</b> Spiesz się, czas trwania promocji do końca lutego.</h2>
                     <button class="order-online-btn">Zamów online</button>
                 </div>
-            </div>
-            <div class="promo-option">
-                <img class="promo-img" src="src/promo2.png" alt="uber-eats-promo">
-                <div class="promo-details">
-                    <h1>UberEats</h1>
-                    <h2>Zamawiaj w aplikacji 
-                        <span class="red-highlight">10% taniej.</span> 
-                        Pobierz aplikację UberEats już dziś.
-                    </h2>
-                    <img src="src/appstore.svg" alt="appstore-icon">
-                    <img src="src/googleplay.svg" alt="googleplay-icon">
-                    <img src="src/huawei.svg" alt="huawei-icon">
-                    <button class="order-online-btn">Zamów online</button>
+                <img class="discount-section-image" src="src/steak.png" alt="steak-picture">
+            </section>
+            <section class="delivery-apps">
+                <a href="#" target="_blank"> <img class="apps-logo" src="src/pysznepl.svg" alt="pysznepl-logo"> </a>
+                <a href="#" target="_blank"> <img class="apps-logo" src="src/deligoo.svg" alt="deligoo-logo"> </a>
+                <a href="#" target="_blank"> <img class="apps-logo" src="src/glovo.svg" alt="glovo-logo"> </a>
+                <a href="#" target="_blank"> <img class="apps-logo" src="src/ubereats.svg" alt="ubereats-logo"> </a>
+                <a href="#" target="_blank"> <img class="apps-logo" src="src/boltfood.svg" alt="boltfood-logo"> </a>
+            </section>
+            <section class="promo">
+                <div class="promo-option">
+                    <img class="promo-img" src="src/promo1.png" alt="food-on-the-table">
+                    <div class="promo-details">
+                        <h1>Zestaw dla 3 osób</h1>
+                        <h2>Razem smakuje lepiej! Zamów zestawy obiadowy dla 3 osób już od
+                            <span class="black-highlight">39zł </span>
+                        </h2>
+                        <button class="order-online-btn">Zamów online</button>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-	<script src="index.js"></script>
-  </body>
+                <div class="promo-option">
+                    <img class="promo-img" src="src/promo2.png" alt="uber-eats-promo">
+                    <div class="promo-details">
+                        <h1>UberEats</h1>
+                        <h2>Zamawiaj w aplikacji 
+                            <span class="red-highlight">10% taniej.</span> 
+                            Pobierz aplikację UberEats już dziś.
+                        </h2>
+                        <img src="src/appstore.svg" alt="appstore-icon">
+                        <img src="src/googleplay.svg" alt="googleplay-icon">
+                        <img src="src/huawei.svg" alt="huawei-icon">
+                        <button class="order-online-btn">Zamów online</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
 </html>
