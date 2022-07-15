@@ -1,0 +1,17 @@
+$red-color: #920303;
+
+%hover-style {
+    transform: scale(1.10); 
+    transition: all 100ms;
+}
+
+%active-style {
+    transform: scale(.99); 
+    transition: all 100ms;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
