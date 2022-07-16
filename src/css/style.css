@@ -453,6 +453,7 @@ main {
 
 .swiper-pagination {
   text-align: left;
+  padding-left: 15px;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
