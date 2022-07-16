@@ -316,11 +316,33 @@ main {
     }
 }
 
-.delivery-apps {
-    
+.delivery-apps-section {
+    height: 50px;
+    margin: 0 10px 50px 10px;
+    width: 96%;
+
+    @include xl { 
+        margin-top: 50px;
+    }
+
+    .app-swiper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
 
     img {
-        height: auto;
+        display: block;
+        margin: auto;
     }
 }
 
