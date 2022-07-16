@@ -187,8 +187,8 @@ main {
     @include xl {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
         margin: 0px;
-        width: 100%;
     }
 
     h1 {
@@ -204,6 +204,16 @@ main {
             font-size: 56px;
             line-height: 65px;
         }
+
+        @include xl {
+            font-size: 40px;
+            line-height: 55px;
+        }
+
+        @include xxl {
+            font-size: 56px;
+            line-height: 65px;
+        }
     }
 
     h2 {
@@ -216,10 +226,10 @@ main {
         }
 
         @include md {
-            width: 800px    ;
+            width: 100%;
         }
 
-        @include xl {
+        @include xxl {
             width: 406px;
         }
     }
@@ -232,27 +242,48 @@ main {
         }
 
         @include xl {
-            width: 100%;
+            width: 60%;
+        }
+
+        @include xxl {
+            width: 70%;
         }
     }
 }
 
 .swiper {
-    width: 100%;
-    margin: 0 10px 0 50px;
+    width: 90%;
+    margin: 100px 0;
+
+    @include xl {
+        margin: 30px 20px 0 100px;
+    }
+
+    @include xxl {
+        margin: 60px 40px 0 140px;
+        width: 50%;
+    }
 }
 
 .swiper-slide {
     display: flex;
     flex-direction: column;
     margin-bottom: 120px;
-    width: 80%;
-    padding-left: 97px;
+    margin-left: 1px;
+
+    @include xxl {
+        width: 90%;
+    }
 }
 
 .swiper-pagination {
     text-align: left;
-    margin-left: 97px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    margin-right: 20px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -286,18 +317,7 @@ main {
 }
 
 .delivery-apps {
-    @include flex-center;
-    justify-content: space-around;
-    flex-direction: column;
-    margin: 50px 0;
-    flex: 1;
-
-     @include xl {
-        padding: 0 368px;
-        flex-direction: row;
-        margin: 24px 0;
-        width: 100%;
-     }
+    
 
     img {
         height: auto;
@@ -328,7 +348,7 @@ main {
             font-weight: 700;
         }
 
-        @include xl {
+        @include xxl {
             font-size: 35px;
         }
     }
@@ -350,7 +370,7 @@ main {
             line-height: 24px;
         }
 
-        @include xl {
+        @include xxl {
             font-size: 20px;
             line-height: 32px;
         }
@@ -404,7 +424,7 @@ main {
             height: 15px;
             margin: 0px 5px 5px 0px;
 
-            @include md{
+            @include md {
                 height: 25.97px;
                 margin: 0px 15px 15px 0px;
             }

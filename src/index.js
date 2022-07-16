@@ -1,18 +1,32 @@
 "use strict"
 
-const swiper = new Swiper('.swiper', {
+const discountSwiper = new Swiper('.swiper', {
   loop: true,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + "</span>";
+    },
   },
 
-  pagination: {
-          el: ".swiper-pagination",
-  }
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
+const appSwiper = new Swiper('.app-swiper', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 })
-  
 
 document.querySelector(".dropdown-menu-btn").addEventListener("click", function(event) {
   event.preventDefault()

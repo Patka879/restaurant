@@ -350,8 +350,8 @@ main {
   .discount {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     margin: 0px;
-    width: 100%;
   }
 }
 .discount h1 {
@@ -370,6 +370,18 @@ main {
     line-height: 65px;
   }
 }
+@media (min-width: 1300px) {
+  .discount h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+@media (min-width: 1400px) {
+  .discount h1 {
+    font-size: 56px;
+    line-height: 65px;
+  }
+}
 .discount h2 {
   font-size: 20px;
   font-weight: 300;
@@ -382,10 +394,10 @@ main {
 }
 @media (min-width: 720px) {
   .discount h2 {
-    width: 800px;
+    width: 100%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .discount h2 {
     width: 406px;
   }
@@ -400,26 +412,51 @@ main {
 }
 @media (min-width: 1300px) {
   .discount img {
-    width: 100%;
+    width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  .discount img {
+    width: 70%;
   }
 }
 
 .swiper {
-  width: 100%;
-  margin: 0 10px 0 50px;
+  width: 90%;
+  margin: 100px 0;
+}
+@media (min-width: 1300px) {
+  .swiper {
+    margin: 30px 20px 0 100px;
+  }
+}
+@media (min-width: 1400px) {
+  .swiper {
+    margin: 60px 40px 0 140px;
+    width: 50%;
+  }
 }
 
 .swiper-slide {
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
-  width: 80%;
-  padding-left: 97px;
+  margin-left: 1px;
+}
+@media (min-width: 1400px) {
+  .swiper-slide {
+    width: 90%;
+  }
 }
 
 .swiper-pagination {
   text-align: left;
-  margin-left: 97px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  margin-right: 20px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -454,22 +491,6 @@ main {
   }
 }
 
-.delivery-apps {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  margin: 50px 0;
-  flex: 1;
-}
-@media (min-width: 1300px) {
-  .delivery-apps {
-    padding: 0 368px;
-    flex-direction: row;
-    margin: 24px 0;
-    width: 100%;
-  }
-}
 .delivery-apps img {
   height: auto;
 }
@@ -502,7 +523,7 @@ main {
     font-weight: 700;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .promo h1 {
     font-size: 35px;
   }
@@ -526,7 +547,7 @@ main {
     line-height: 24px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .promo h2 {
     font-size: 20px;
     line-height: 32px;
