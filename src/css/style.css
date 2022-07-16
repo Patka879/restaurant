@@ -412,12 +412,12 @@ main {
 }
 @media (min-width: 1300px) {
   .discount img {
-    width: 60%;
+    width: 50%;
   }
 }
 @media (min-width: 1400px) {
   .discount img {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -442,10 +442,12 @@ main {
   flex-direction: column;
   margin-bottom: 120px;
   margin-left: 1px;
+  padding-left: 15px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .swiper-slide {
     width: 90%;
+    margin-left: 0;
   }
 }
 
@@ -492,8 +494,8 @@ main {
 }
 
 .delivery-apps-section {
-  height: 50px;
-  margin: 0 10px 50px 10px;
+  height: 10%;
+  margin: 0px 10px 50px 10px;
   width: 96%;
 }
 @media (min-width: 1300px) {
@@ -510,13 +512,23 @@ main {
   overflow: hidden;
 }
 .delivery-apps-section .swiper-slide {
-  height: auto;
-  width: 100%;
   margin: auto;
 }
+@media (min-width: 480px) {
+  .delivery-apps-section .swiper-slide {
+    height: auto;
+    width: 100%;
+  }
+}
 .delivery-apps-section img {
-  display: block;
+  width: 70%;
   margin: auto;
+  display: block;
+}
+@media (min-width: 1300px) {
+  .delivery-apps-section img {
+    width: auto;
+  }
 }
 
 .promo {
@@ -611,8 +623,13 @@ main {
   top: 1%;
   left: 8%;
   color: white;
-  width: 40%;
+  width: 55%;
   z-index: 10;
+}
+@media (min-width: 480px) {
+  .promo-details {
+    width: 40%;
+  }
 }
 @media (min-width: 720px) {
   .promo-details {

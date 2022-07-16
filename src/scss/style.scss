@@ -17,7 +17,7 @@ body {
     overflow-x: hidden;
 }
 
-a, button{
+a, button {
     text-decoration: none;
     cursor: pointer;
    &:hover { 
@@ -242,11 +242,11 @@ main {
         }
 
         @include xl {
-            width: 60%;
+            width: 50%;
         }
 
         @include xxl {
-            width: 70%;
+            width: 60%;
         }
     }
 }
@@ -270,9 +270,11 @@ main {
     flex-direction: column;
     margin-bottom: 120px;
     margin-left: 1px;
+    padding-left: 15px;
 
-    @include xxl {
+    @include xl {
         width: 90%;
+        margin-left: 0;
     }
 }
 
@@ -317,8 +319,8 @@ main {
 }
 
 .delivery-apps-section {
-    height: 50px;
-    margin: 0 10px 50px 10px;
+    height: 10%;
+    margin: 0px 10px 50px 10px;
     width: 96%;
 
     @include xl { 
@@ -335,15 +337,24 @@ main {
     }
 
     .swiper-slide {
-        height: auto;
-        width: 100%;
         margin: auto;
+    
+        @include sm {
+            height: auto;
+            width: 100%;  
+        }
     }
 
     img {
-        display: block;
+        width: 70%;
         margin: auto;
+        display: block;
+
+        @include xl {
+            width: auto;
+        }
     }
+
 }
 
 .promo {
@@ -430,9 +441,12 @@ main {
             top: 1%;
             left: 8%;
         color: white;
-        width: 40%;
+        width: 55%;
         z-index: 10;
 
+        @include sm {
+            width: 40%;
+        }
 
         @include md {
             width: 300px;
