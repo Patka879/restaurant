@@ -51,6 +51,7 @@ $red-color: #920303;
         }
 
         @include xl {
+            margin-bottom: 0;
             width: 14px;
         }
     }

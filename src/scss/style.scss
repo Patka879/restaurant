@@ -38,9 +38,7 @@ nav {
     z-index: 1000;
     font-size: 20px;
     background-color: #FFFFFF;
-    margin-bottom: 40px;
     padding: 10px 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @include md {
         padding: 10px 30px;
@@ -77,17 +75,24 @@ nav {
 .nav-top {
     display: none;
     flex-direction: column;
-    position: fixed;
-        left: 10px;
-        top: 70px;
+    position: absolute;
+        top: 86px;
+        left: 0;
     background-color: #FFFFFF;
     z-index: 1000;
     animation-name: fadein;
     animation-duration: 0.75s;
     animation-timing-function: ease-in-out; 
-        
+
     @include sm {
-        top: 100px;
+        top: 83px;
+        width: 200px;
+        padding: 8px;
+    }
+
+    @include md {
+        top: 86px;
+        width: 300px;
     }
 
     @include xl {
@@ -95,7 +100,13 @@ nav {
         flex-direction: row;
         position: static;
         animation-name: none;
+        width: auto;
     }
+}
+
+.nav-top-visible {
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav-link {
@@ -104,7 +115,6 @@ nav {
     padding: 5px;
 
     @include md {
-        width: 300px;
         margin-bottom: 20px;
         font-size: 30px;
     }
@@ -113,8 +123,12 @@ nav {
         margin: 0 54px 0 0;
         padding: 0px;
         border: none;
-        font-size: 14px;
+        font-size: 11px;
         width: auto;
+    }
+
+    @include xxl {
+        font-size: 14px;
     }
 }
 
@@ -172,6 +186,7 @@ main {
 .black-highlight {
     background-color: #000000;
     color: white;
+    padding-right: 4px;
 }
 
 .red-highlight {
@@ -181,11 +196,11 @@ main {
 .discount {
     @include flex-center;
     flex-direction: column;
-    margin: 100px 0 50px 0;
+    margin: 76px 0 50px 0;
     flex: 1;
 
     @include xl {
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
         margin: 0px;
@@ -236,6 +251,7 @@ main {
 
     img {
         width: 100%;
+        max-width: 640px;
 
         @include md {
             width: 100%;
@@ -243,17 +259,14 @@ main {
 
         @include xl {
             width: 50%;
-        }
-
-        @include xxl {
-            width: 60%;
+            max-width:max-content;
         }
     }
 }
 
 .swiper {
     width: 90%;
-    margin: 100px 0;
+    margin: 60px 0;
 
     @include xl {
         margin: 30px 20px 0 100px;
@@ -319,7 +332,7 @@ main {
     }
 }
 
-.delivery-apps-section {
+.delivery-apps {
     height: 10%;
     margin: 0px 10px 50px 10px;
     width: 96%;
@@ -359,28 +372,22 @@ main {
 }
 
 .promo {
-    @include flex-center;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: minmax(40%, 1fr);
+    row-gap: 30px;
     margin-bottom: 30px;
-    flex: 1;
+    padding: 0 25px;
 
-    @include xl {
+    @include lg {
         margin-bottom: 50px;
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
     }
 
     h1 {
-        font-size: 14px;
-
-        @include sm {
-            font-size: 20px;
-        }
-
-        @include md {
-            font-size: 30px;
-            font-weight: 700;
-        }
+        font-size: 30px;
+        font-weight: 700;
+        
 
         @include xxl {
             font-size: 35px;
@@ -388,21 +395,13 @@ main {
     }
 
     h2 {
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 14px;
-
-        @include sm {
-            font-size: 14px;
-            line-height: 18px;
-        }
-
-        @include md{
-            line-height: 20px;
-            font-weight: 500; 
-            font-size: 18px;
-            line-height: 24px;
-        }
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        font-weight: 500; 
+        font-size: 18px;
+        line-height: 24px;
+        
 
         @include xxl {
             font-size: 20px;
@@ -411,66 +410,52 @@ main {
     }
 
     &-option {
+        display: flex;
+        flex-direction: column;
         margin: 10px 0;
-        position: relative;
+        margin-bottom: 30px;
+        width: 100%;
+        color: white;
+        padding: 82px 0 82px 28px;
+        background-size: auto 100%;
+        border-radius: 5px;
+        
 
         @include md {
-            margin: 0 8px;
+            padding: 100px 0 100px 124px;
+            background-position: center;
         }
-
-        @include xl {
-            width: 100%;
-        }
-    }
-
-    &-img {
-        width: 100%;
-        margin-bottom: 30px;
 
         @include lg {
-            width: 920px;
+            padding: 82px 0 82px 28px;
         }
 
         @include xl {
-            width: 98%;
-            margin-bottom: 0px;
+            padding-left: 124px;
         }
     }
 
-    &-details {
-        position: absolute;
-            top: 1%;
-            left: 8%;
-        color: white;
-        width: 55%;
-        z-index: 10;
+    &-option-img1 {
+        background-image: url("../../public/images/promo1.png");
+    }
 
-        @include sm {
-            width: 40%;
-        }
+    &-option-img2 {
+        background-image: url("../../public/images/promo2.png");
+    }
 
-        @include md {
-            width: 300px;
-        }
-
-        @include xl {
-            width: 320px;
-        }  
-    
-        img {
-            height: 15px;
-            margin: 0px 5px 5px 0px;
-
-            @include md {
-                height: 25.97px;
-                margin: 0px 15px 15px 0px;
-            }
-        }
+    a {
+        margin: 0px 5px 5px 0px;
 
         @include md {
-            top: 10%;
-            left: 16%;
+            margin: 0px 15px 15px 0px;
         }
     }
+ 
 }
+
+.icon-container {
+    display: flex;
+}
+
+
 
