@@ -18,7 +18,7 @@ To start this project locally:
 
 Clone the repository:
 ```
-$ git clone git@github.com:Patka879/restaurant.git
+$ git clone git@github.com:Patka879/restaurant.git 
 ```
 Install dependencies:
 ```
