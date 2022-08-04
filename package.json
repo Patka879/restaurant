@@ -4,7 +4,10 @@
   "description": "A home page for steak-house restaurant written with HTML, CSS and vanilla JS",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch src/scss/style.scss src/css/style.css"
+    "old-start": "sass --watch src/scss/style.scss src/css/style.css",
+    "old-build": "sass src/scss/style.scss src/css/style.css --style=compressed",
+    "start": "gulp start",
+    "build": "gulp build --production"
   },
   "repository": {
     "type": "git",
@@ -16,7 +19,15 @@
     "url": "https://github.com/Patka879/restaurant-/issues"
   },
   "homepage": "https://github.com/Patka879/restaurant-#readme",
-  "devDependencies": {
-    "sass": "^1.53.0"
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-mode": "^1.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.2"
   }
 }
