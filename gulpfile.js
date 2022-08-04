@@ -54,4 +54,4 @@ function watch() {
 
 gulp.task('start', gulp.series(cleanBuildFolder, watch))
 
-gulp.task('build', gulp.series(cleanBuildFolder, buildHtml, buildJavaScript, buildStyles, copyImages))
+gulp.task('build', gulp.series(cleanBuildFolder, gulp.series(buildHtml, buildJavaScript, buildStyles, copyImages)))
